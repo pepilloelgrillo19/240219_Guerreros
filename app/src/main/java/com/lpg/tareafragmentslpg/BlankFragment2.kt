@@ -24,7 +24,7 @@ class BlankFragment2 : Fragment() {
         val guerrero = root2.findViewById<ImageView>(R.id.image3)
 
         if(args.idGuerrero.toString() == "1"){
-            guerrero.setImageResource(R.drawable.xenavertical)
+            guerrero.setImageResource(R.drawable.xenavertical2)
         }else{
             guerrero.setImageResource(R.drawable.conanvertical)
         }

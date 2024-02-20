@@ -27,12 +27,12 @@ class BlankFragment1 : Fragment() {
 
         xena.setOnClickListener(){
             val accion1 = BlankFragment1Directions.actionBlankFragment1ToBlankFragment2(1)
-            dialogoAlerta("Xena",accion1, "¿Quieres que tu grito de guerra sea Ayayayayaya")
+            dialogoAlerta("Xena",accion1, "¿Quieres que tu grito de guerra sea Ayayayayaya?")
         }
 
         conan.setOnClickListener(){
             val accion2 = BlankFragment1Directions.actionBlankFragment1ToBlankFragment2(2)
-            dialogoAlerta("Conan", accion2, "De verdad piensas que lo mejor de la vida es Aplastar enemigos, verles destrozados y oir el lamento de sus mujeres")
+            dialogoAlerta("Conan", accion2, "¿De verdad piensas que lo mejor de la vida es Aplastar enemigos, verles destrozados y oir el lamento de sus mujeres?")
         }
 
         return root
