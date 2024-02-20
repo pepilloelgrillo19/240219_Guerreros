@@ -23,14 +23,14 @@ class BlankFragment2 : Fragment() {
         val root2 = inflater.inflate(R.layout.fragment_blank2, container, false)
         val guerrero = root2.findViewById<ImageView>(R.id.image3)
 
-        if(args.idGuerrero.toString() == "1"){
-            guerrero.setImageResource(R.drawable.xenavertical2)
-        }else{
-            guerrero.setImageResource(R.drawable.conanvertical)
+        if(savedInstanceState == null) {
+            if (args.idGuerrero.toString() == "1") {
+                guerrero.setImageResource(R.drawable.xenavertical2)
+            } else {
+                guerrero.setImageResource(R.drawable.conanvertical)
+            }
         }
-
         // Inflate the layout for this fragment
         return root2
     }
-
 }
